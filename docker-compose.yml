@@ -1,0 +1,9 @@
+services:
+    web:
+        build: .
+        container_name: menda-flask
+        ports:
+            - '8080:8080' # Host:Container
+        environment:
+            - PORT=8080
+        restart: always
